@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 720" role="img" aria-label="Illustration of a smiling doctor in a white coat">
+<rect width="600" height="720" fill="#E8F3EF"/>
+<rect x="330" y="60" width="230" height="300" rx="6" fill="#EAF2FA"/>
+<path d="M445 60V360M330 210H560" stroke="#fff" stroke-width="8"/>
+<rect x="40" y="150" width="180" height="10" rx="3" fill="#DCE7E5"/><rect x="40" y="260" width="180" height="10" rx="3" fill="#DCE7E5"/>
+<rect x="56" y="104" width="22" height="46" rx="3" fill="#2C8C83" opacity=".5"/><rect x="84" y="116" width="18" height="34" rx="3" fill="#176B67" opacity=".4"/><rect x="108" y="100" width="26" height="50" rx="3" fill="#fff"/>
+<rect x="60" y="216" width="30" height="44" rx="3" fill="#fff"/><rect x="96" y="226" width="20" height="34" rx="3" fill="#2C8C83" opacity=".45"/>
+<ellipse cx="92" cy="560" rx="34" ry="12" fill="#DCE7E5"/><path d="M92 560C70 500 60 470 80 430M92 560C100 500 120 470 112 420M92 560C84 520 100 490 70 470" stroke="#2C8C83" stroke-width="5" fill="none" stroke-linecap="round" opacity=".6"/>
+<g transform="translate(-53.99999999999998 -129.59999999999997) scale(1.18 1.18)">
+<path d="M60 720C60 610 112 548 214 522H386C488 548 540 610 540 720Z" fill="#fff" stroke="#DCE7E5" stroke-width="2"/>
+<path d="M236 520L300 648L364 520Z" fill="#2C8C83"/>
+<path d="M214 522L296 668L246 720H150C150 640 170 566 214 522Z" fill="#F5F9F8" stroke="#DCE7E5" stroke-width="2"/>
+<path d="M386 522L304 668L354 720H450C450 640 430 566 386 522Z" fill="#F5F9F8" stroke="#DCE7E5" stroke-width="2"/>
+<path d="M268 440V520Q300 556 332 520V440Z" fill="#D9A582"/>
+<path d="M268 470Q300 500 332 470V440H268Z" fill="#C9936F" opacity=".5"/>
+<path d="M222 340C206 250 256 214 300 214C350 214 396 250 378 340Z" fill="#2B2220"/>
+<circle cx="300" cy="210" r="38" fill="#2B2220"/>
+<ellipse cx="224" cy="372" rx="12" ry="20" fill="#DFAE8B"/><ellipse cx="376" cy="372" rx="12" ry="20" fill="#DFAE8B"/>
+<ellipse cx="300" cy="364" rx="76" ry="96" fill="#E8B896"/>
+<path d="M224 350C226 290 262 268 300 268C340 268 374 290 376 350C362 312 336 296 300 296C264 296 238 312 224 350Z" fill="#2B2220"/>
+<path d="M252 342Q270 332 288 342" stroke="#2B2220" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path d="M312 342Q330 332 348 342" stroke="#2B2220" stroke-width="5" fill="none" stroke-linecap="round"/>
+<ellipse cx="270" cy="364" rx="8" ry="9" fill="#3A2A25"/><ellipse cx="330" cy="364" rx="8" ry="9" fill="#3A2A25"/>
+<circle cx="273" cy="361" r="2.6" fill="#fff"/><circle cx="333" cy="361" r="2.6" fill="#fff"/>
+<path d="M300 366Q294 388 300 392Q306 392 308 388" stroke="#C9936F" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+<path d="M270 410Q300 438 330 410Q300 420 270 410Z" fill="#B85C5A"/>
+<path d="M274 412Q300 432 326 412Q300 424 274 412Z" fill="#fff"/>
+<circle cx="252" cy="396" r="14" fill="#E89A8A" opacity=".28"/><circle cx="348" cy="396" r="14" fill="#E89A8A" opacity=".28"/>
+<path d="M246 500C232 590 262 646 310 654" stroke="#3B4A50" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M354 500C368 586 352 626 334 640" stroke="#3B4A50" stroke-width="7" fill="none" stroke-linecap="round"/>
+<circle cx="322" cy="652" r="15" fill="#A9BCC1" stroke="#3B4A50" stroke-width="4"/>
+<rect x="404" y="610" width="76" height="26" rx="4" fill="#E8F3EF" stroke="#DCE7E5"/>
+<rect x="412" y="619" width="44" height="4" rx="2" fill="#2C8C83"/><rect x="412" y="627" width="28" height="3" rx="1.5" fill="#9DB0B5"/>
+</g></svg>

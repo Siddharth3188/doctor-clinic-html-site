@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dr. [Doctor Name] | [Medical Specialty] Consultations | [Clinic Name]</title>
+  <meta name="description" content="Professional medical guidance in a welcoming environment. Learn about the doctor, explore consultation services and enquire about an appointment.">
+  <meta name="theme-color" content="#176B67">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23176B67'/%3E%3Cpath d='M16 8v16M8 16h16' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+  ============================================================
+  HOW TO CUSTOMISE THIS DEMO
+  ============================================================
+  1. Open script.js and edit the CONFIG object at the top. Name, specialty,
+     phone, WhatsApp, email, address, hours and Maps link are all set there.
+  2. Replace the images in /images/ with the real doctor's photographs
+     (keep file names, or update the <img> src below).
+       images/doctor-hero.svg     -> hero portrait (about 5:6, portrait)
+       images/doctor-profile.svg  -> profile portrait (about 5:6)
+     These are ILLUSTRATIONS, not real people. Swap in verified photos.
+  3. Services: edit the cards inside <section id="services">.
+  4. Text shown as [Square Brackets] is a placeholder. Replace it only with
+     verified information from the doctor.
+  ============================================================
+-->
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ============ HEADER / NAVIGATION ============ -->
+<header class="site-header" id="top">
+  <div class="container nav-bar">
+    <a class="brand" href="#home" aria-label="Clinic home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+        <rect width="40" height="40" rx="10" fill="currentColor"/>
+        <path d="M20 10v20M10 20h20" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name" data-cfg="clinicName">[Clinic Name]</span>
+        <span class="brand-sub">Dr. <span data-cfg="doctorName">[Doctor Name]</span></span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+      <span class="bars" aria-hidden="true"></span>
+    </button>
+
+    <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Doctor</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Choose Us</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="#appointment">Book an Appointment</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home" aria-labelledby="hero-title">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">PERSONALIZED HEALTHCARE</p>
+        <h1 id="hero-title">Your Health Deserves Thoughtful Care.</h1>
+        <p class="lead">Professional medical guidance in a welcoming environment, with care tailored to your needs.</p>
+
+        <dl class="hero-identity">
+          <div><dt>Doctor</dt><dd>Dr. <span data-cfg="doctorName">[Doctor Name]</span></dd></div>
+          <div><dt>Specialty</dt><dd data-cfg="specialty">[Medical Specialty]</dd></div>
+          <div><dt>Clinic</dt><dd data-cfg="clinicName">[Clinic Name or Location]</dd></div>
+        </dl>
+
+        <div class="btn-row">
+          <a class="btn btn-primary btn-lg" href="#appointment">Book an Appointment</a>
+          <a class="btn btn-outline btn-lg" href="#contact">Contact the Clinic</a>
+        </div>
+        <p class="trust-line">Clear guidance. Compassionate care. Patient-focused consultations.</p>
+      </div>
+
+      <figure class="hero-portrait">
+        <!-- REPLACE: put the real doctor's portrait here (portrait orientation, face in the upper half). -->
+        <img src="images/doctor-hero.svg" width="600" height="720"
+             alt="Illustrative portrait of a smiling doctor in a white coat with a stethoscope (placeholder for the real doctor's photograph)">
+        <figcaption class="portrait-card">
+          <strong>Dr. <span data-cfg="doctorName">[Doctor Name]</span></strong>
+          <span data-cfg="specialty">[Medical Specialty]</span>
+        </figcaption>
+        <p class="img-note">Illustrative image. Replace with the doctor's own photograph.</p>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ MEET YOUR DOCTOR ============ -->
+  <section class="section section-alt" id="about" aria-labelledby="about-title">
+    <div class="container about-grid">
+      <div class="about-media">
+        <!-- REPLACE: real doctor photo for the profile section. -->
+        <img src="images/doctor-profile.svg" width="600" height="720" loading="lazy"
+             alt="Illustrative portrait of a doctor standing in a consulting room (placeholder for the real doctor's photograph)">
+      </div>
+
+      <div class="about-body">
+        <h2 id="about-title">Meet Your Doctor</h2>
+        <p class="doctor-name">Dr. <span data-cfg="doctorName">[Doctor Name]</span></p>
+        <p class="doctor-quals" data-cfg="qualifications">[Medical Degree and Qualifications]</p>
+
+        <dl class="facts">
+          <div><dt>Specialty</dt><dd data-cfg="specialty">[Medical Specialty]</dd></div>
+          <div><dt>Experience</dt><dd data-cfg="experience">[Years of Experience]</dd></div>
+          <div><dt>Clinic</dt><dd data-cfg="clinicName">[Clinic Name]</dd></div>
+        </dl>
+
+        <p>Dr. <span data-cfg="doctorName">[Name]</span> provides consultations in <span data-cfg="specialty">[specialty]</span>, helping patients understand their health concerns and available care options.</p>
+        <p>[Short professional biography: add two or three sentences about the doctor's approach to patient care, written or approved by the doctor.]</p>
+
+        <h3>Areas of clinical focus</h3>
+        <ul class="chips">
+          <li>[Clinical focus area 1]</li>
+          <li>[Clinical focus area 2]</li>
+          <li>[Clinical focus area 3]</li>
+          <li>[Clinical focus area 4]</li>
+        </ul>
+
+        <a class="btn btn-primary" href="#appointment">Book a Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <!--
+    CUSTOMISE SERVICES: each card below is one <article class="service-card">.
+    Edit the title and description, or copy a card to add another. The
+    data-service value pre-selects that option in the appointment form.
+    These are SAMPLE services for a demo. Replace with the real practice's services.
+  -->
+  <section class="section" id="services" aria-labelledby="services-title">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="services-title">How We Can Help</h2>
+        <p>Explore the consultation and healthcare services offered by the practice.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <svg class="icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M9 6v9a6 6 0 0 0 12 0V6M6 6h6M18 6h6M15 21v2a4 4 0 0 0 8 0v-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="23" cy="19" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <h3>General Consultation</h3>
+          <p>Discuss your health concerns with the doctor and understand the next steps.</p>
+          <a class="text-link" href="#appointment" data-service="General Consultation">Enquire about this</a>
+        </article>
+
+        <article class="service-card">
+          <svg class="icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 27S5 20.5 5 12.5A6 6 0 0 1 16 9a6 6 0 0 1 11 3.5C27 20.5 16 27 16 27Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 17h4l2-3 3 5 2-2h2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Preventive Health Checkups</h3>
+          <p>Routine consultations focused on staying well and noticing concerns early.</p>
+          <a class="text-link" href="#appointment" data-service="Preventive Health Checkup">Enquire about this</a>
+        </article>
+
+        <article class="service-card">
+          <svg class="icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="16" cy="11" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M6 27c0-5.5 4.5-9 10-9s10 3.5 10 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M16 21v4M14 23h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <h3>Specialist Consultation</h3>
+          <p>Focused guidance from the doctor on concerns within their area of specialty.</p>
+          <a class="text-link" href="#appointment" data-service="Specialist Consultation">Enquire about this</a>
+        </article>
+
+        <article class="service-card">
+          <svg class="icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="14" cy="14" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M10 14h8M14 10v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <h3>Diagnostic Guidance</h3>
+          <p>Understand which tests or assessments may be helpful and what they involve.</p>
+          <a class="text-link" href="#appointment" data-service="Diagnostic Guidance">Enquire about this</a>
+        </article>
+
+        <article class="service-card">
+          <svg class="icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect x="5" y="7" width="22" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 13h22M11 4v6M21 4v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="m12 20 3 3 5-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Follow-up Consultations</h3>
+          <p>Review your progress with the doctor and talk through any questions.</p>
+          <a class="text-link" href="#appointment" data-service="Follow-up Consultation">Enquire about this</a>
+        </article>
+
+        <article class="service-card">
+          <svg class="icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M6 8a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H15l-6 5v-5a3 3 0 0 1-3-3V8Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M11 11h10M11 15h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <h3>Patient Health Guidance</h3>
+          <p>Clear explanations about your health concerns and the care options available.</p>
+          <a class="text-link" href="#appointment" data-service="Patient Health Guidance">Enquire about this</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE US ============ -->
+  <section class="section section-alt" id="why" aria-labelledby="why-title">
+    <div class="container why-grid">
+      <div class="why-media">
+        <img src="images/consultation.svg" width="800" height="560" loading="lazy"
+             alt="Illustration of a doctor and a patient talking during a consultation">
+      </div>
+      <div>
+        <h2 id="why-title">Care That Puts Patients First</h2>
+        <ul class="feature-list">
+          <li>
+            <svg class="icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 27S5 20.5 5 12.5A6 6 0 0 1 16 9a6 6 0 0 1 11 3.5C27 20.5 16 27 16 27Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            <div><h3>Patient-Centred Consultations</h3><p>Time to describe your concerns and ask your questions.</p></div>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M6 8a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H15l-6 5v-5a3 3 0 0 1-3-3V8Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            <div><h3>Clear Communication</h3><p>Plain-language explanations so you understand your options.</p></div>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect x="5" y="7" width="22" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 13h22M11 4v6M21 4v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <div><h3>Convenient Appointment Enquiries</h3><p>Reach the clinic by phone or WhatsApp to ask about availability.</p></div>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M5 15 16 6l11 9v12H5V15Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M16 14v8M12 18h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <div><h3>A Welcoming Clinical Environment</h3><p>A calm, comfortable setting for every consultation.</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ APPOINTMENT ============ -->
+  <section class="section" id="appointment" aria-labelledby="appt-title">
+    <div class="container appt-grid">
+      <div class="appt-intro">
+        <h2 id="appt-title">Book an Appointment</h2>
+        <p>Contact the clinic to enquire about consultation availability and appointments.</p>
+        <ol class="steps">
+          <li>Fill in the short form.</li>
+          <li>Review the message we prepare for you.</li>
+          <li>Send it to the clinic on WhatsApp.</li>
+        </ol>
+        <p class="demo-note"><strong>This is a demo form.</strong> Nothing is stored or sent by this website, and no appointment is confirmed here. A real website would use a secure booking system.</p>
+      </div>
+
+      <div class="appt-card">
+        <form id="apptForm" novalidate>
+          <div class="field">
+            <label for="pName">Patient name</label>
+            <input id="pName" name="name" type="text" autocomplete="name" required>
+            <p class="error" id="pName-err" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="pPhone">Phone number</label>
+            <input id="pPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="e.g. 98765 43210" required>
+            <p class="error" id="pPhone-err" role="alert"></p>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="pDate">Preferred date</label>
+              <input id="pDate" name="date" type="date" required>
+              <p class="error" id="pDate-err" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="pType">Consultation type</label>
+              <select id="pType" name="type" required>
+                <option value="">Select a type</option>
+                <option>General Consultation</option>
+                <option>Preventive Health Checkup</option>
+                <option>Specialist Consultation</option>
+                <option>Diagnostic Guidance</option>
+                <option>Follow-up Consultation</option>
+                <option>Patient Health Guidance</option>
+              </select>
+              <p class="error" id="pType-err" role="alert"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="pMsg">Short message <span class="optional">(optional)</span></label>
+            <textarea id="pMsg" name="message" rows="3" maxlength="300"></textarea>
+          </div>
+          <p class="privacy-note">Please avoid sharing sensitive medical information through this demo form.</p>
+          <button class="btn btn-primary btn-block" type="submit">Review My Enquiry</button>
+        </form>
+
+        <!-- Shown after the form validates -->
+        <div class="review" id="review" hidden tabindex="-1">
+          <h3>Review your enquiry</h3>
+          <p>This message will open in WhatsApp. You can still edit it there before sending. Nothing is sent until you press send in WhatsApp.</p>
+          <pre class="review-text" id="reviewText"></pre>
+          <p class="notice" id="reviewNotice" hidden></p>
+          <div class="btn-row">
+            <a class="btn btn-primary" id="waSend" href="#" target="_blank" rel="noopener">Open WhatsApp</a>
+            <button class="btn btn-outline" type="button" id="editBtn">Edit details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLANNING YOUR VISIT ============ -->
+  <section class="section section-alt" id="visit" aria-labelledby="visit-title">
+    <div class="container visit-grid">
+      <div>
+        <h2 id="visit-title">Planning Your Visit?</h2>
+        <p class="section-sub">Everything you need to know before you arrive.</p>
+        <dl class="info-list">
+          <div><dt>Clinic address</dt><dd data-cfg="address">[Clinic Address]</dd></div>
+          <div><dt>Consultation hours</dt><dd data-cfg="hours">[Consultation Hours]</dd></div>
+          <div><dt>Appointment method</dt><dd data-cfg="appointmentMethod">[Appointment Method, e.g. phone or WhatsApp]</dd></div>
+          <div><dt>Phone</dt><dd data-cfg="phoneDisplay">[Phone Number]</dd></div>
+          <div><dt>Accessibility and visitor information</dt><dd data-cfg="accessibility">[Accessibility or visitor information, if supplied]</dd></div>
+        </dl>
+        <a class="btn btn-primary" data-link="maps" href="#" target="_blank" rel="noopener">Get Directions</a>
+      </div>
+      <div class="visit-media">
+        <img src="images/clinic-interior.svg" width="800" height="560" loading="lazy"
+             alt="Illustration of a bright clinic reception area with a waiting sofa and a plant">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <!-- Edit the answers below. Keep them general unless the clinic confirms its policies. -->
+  <section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="container faq-wrap">
+      <div class="section-head">
+        <h2 id="faq-title">Frequently Asked Questions</h2>
+        <p>Quick answers to common questions. Please contact the clinic to confirm details.</p>
+      </div>
+      <div class="accordion">
+        <div class="acc-item">
+          <h3><button class="acc-btn" id="faq-b1" aria-expanded="false" aria-controls="faq-p1">How can I book an appointment?</button></h3>
+          <div class="acc-panel" id="faq-p1" role="region" aria-labelledby="faq-b1" hidden><p>You can use the enquiry form on this page, call the clinic, or message the clinic on WhatsApp. The clinic team will confirm availability with you directly.</p></div>
+        </div>
+        <div class="acc-item">
+          <h3><button class="acc-btn" id="faq-b2" aria-expanded="false" aria-controls="faq-p2">What should I bring to my consultation?</button></h3>
+          <div class="acc-panel" id="faq-p2" role="region" aria-labelledby="faq-b2" hidden><p>Bring any relevant medical records or reports you already have, along with a list of questions you would like to ask. The clinic can tell you if anything else is needed.</p></div>
+        </div>
+        <div class="acc-item">
+          <h3><button class="acc-btn" id="faq-b3" aria-expanded="false" aria-controls="faq-p3">How can I contact the clinic?</button></h3>
+          <div class="acc-panel" id="faq-p3" role="region" aria-labelledby="faq-b3" hidden><p>Use the contact section of this page to call the clinic, send a WhatsApp message, or get directions.</p></div>
+        </div>
+        <div class="acc-item">
+          <h3><button class="acc-btn" id="faq-b4" aria-expanded="false" aria-controls="faq-p4">Can I request a follow-up appointment?</button></h3>
+          <div class="acc-panel" id="faq-p4" role="region" aria-labelledby="faq-b4" hidden><p>Yes, you can enquire about a follow-up through the same form or by contacting the clinic. Please mention that it is a follow-up visit.</p></div>
+        </div>
+        <div class="acc-item">
+          <h3><button class="acc-btn" id="faq-b5" aria-expanded="false" aria-controls="faq-p5">Where is the clinic located?</button></h3>
+          <div class="acc-panel" id="faq-p5" role="region" aria-labelledby="faq-b5" hidden><p>The clinic address and a directions link are listed in the "Planning Your Visit" and contact sections of this page.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <div class="container contact-grid">
+      <div>
+        <h2 id="contact-title">We're Here to Help You Get in Touch.</h2>
+        <p class="section-sub">Reach out to ask about consultations, availability or directions.</p>
+        <div class="btn-col">
+          <a class="btn btn-white" data-link="tel" href="#">Call the Clinic</a>
+          <a class="btn btn-ghost" data-link="whatsapp" href="#" target="_blank" rel="noopener">Enquire on WhatsApp</a>
+          <a class="btn btn-ghost" data-link="maps" href="#" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+      </div>
+      <dl class="contact-list">
+        <div><dt>Doctor or clinic</dt><dd><span data-cfg="clinicName">[Clinic Name]</span>, Dr. <span data-cfg="doctorName">[Doctor Name]</span></dd></div>
+        <div><dt>Phone</dt><dd data-cfg="phoneDisplay">[Phone Number]</dd></div>
+        <div><dt>WhatsApp</dt><dd data-cfg="whatsappDisplay">[WhatsApp Number]</dd></div>
+        <div><dt>Email</dt><dd data-cfg="email">[Email Address, if supplied]</dd></div>
+        <div><dt>Address</dt><dd data-cfg="address">[Clinic Address]</dd></div>
+        <div><dt>Consultation hours</dt><dd data-cfg="hours">[Consultation Hours]</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand brand-light" href="#home">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="10" fill="#fff"/><path d="M20 10v20M10 20h20" stroke="#176B67" stroke-width="4.5" stroke-linecap="round"/></svg>
+        <span class="brand-text"><span class="brand-name" data-cfg="clinicName">[Clinic Name]</span><span class="brand-sub">Dr. <span data-cfg="doctorName">[Doctor Name]</span></span></span>
+      </a>
+      <p class="footer-desc">Thoughtful, patient-focused consultations in a welcoming setting.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <h2 class="footer-h">Explore</h2>
+      <ul>
+        <li><a href="#about">About Doctor</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#appointment">Book an Appointment</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h2 class="footer-h">Contact</h2>
+      <ul>
+        <li data-cfg="phoneDisplay">[Phone Number]</li>
+        <li data-cfg="email">[Email Address, if supplied]</li>
+        <li data-cfg="address">[Clinic Address]</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>Please avoid sharing sensitive medical information through this website. For emergencies, contact local emergency services.</p>
+    <p>&copy; <span id="year">2026</span> <span data-cfg="clinicName">[Clinic Name]</span>. <span class="demo-tag">Website Concept Demo</span></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

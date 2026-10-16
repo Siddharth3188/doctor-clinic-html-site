@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-label="Illustration of a bright, welcoming clinic reception area">
+<rect width="800" height="560" fill="#F5F9F8"/><rect y="400" width="800" height="160" fill="#E8F3EF"/>
+<rect x="60" y="60" width="260" height="230" rx="6" fill="#EAF2FA"/><path d="M190 60V290M60 175H320" stroke="#fff" stroke-width="8"/>
+<circle cx="560" cy="130" r="46" fill="#fff" stroke="#DCE7E5" stroke-width="3"/><path d="M560 108V152M538 130H582" stroke="#2C8C83" stroke-width="10" stroke-linecap="round"/>
+<rect x="400" y="260" width="340" height="14" rx="4" fill="#176B67"/><rect x="420" y="274" width="12" height="126" fill="#176B67"/><rect x="708" y="274" width="12" height="126" fill="#176B67"/>
+<rect x="470" y="226" width="90" height="34" rx="5" fill="#fff" stroke="#DCE7E5"/>
+<rect x="80" y="340" width="240" height="70" rx="14" fill="#2C8C83"/><rect x="80" y="300" width="240" height="60" rx="14" fill="#2C8C83" opacity=".8"/><rect x="92" y="410" width="10" height="30" fill="#176B67"/><rect x="298" y="410" width="10" height="30" fill="#176B67"/>
+<ellipse cx="400" cy="470" rx="34" ry="12" fill="#DCE7E5"/><rect x="384" y="400" width="32" height="72" rx="8" fill="#fff" stroke="#DCE7E5"/>
+<path d="M400 400C370 360 366 330 386 306M400 400C412 360 436 340 428 300M400 400C396 370 410 346 380 330" stroke="#2C8C83" stroke-width="6" fill="none" stroke-linecap="round" opacity=".65"/>
+</svg>
